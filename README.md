@@ -1,5 +1,6 @@
 # Building a SOC + Honeynet in Azure (Live Traffic)
-![Cloud Honeynet / SOC](https://i.imgur.com/ZWxe03e.jpg)
+![Cloud Honeynet / SOC](https://github.com/Sirr-G/Cloud-SOC/assets/146764724/b4f36107-3ca8-46a6-a139-6995a7ee9efd)
+
 
 ## Introduction
 
@@ -12,10 +13,12 @@ In this project, I build a mini honeynet in Azure and ingest log sources from va
 - AzureNetworkAnalytics_CL (Malicious Flows allowed into our honeynet)
 
 ## Architecture Before Hardening / Security Controls
-![Architecture Diagram](https://i.imgur.com/aBDwnKb.jpg)
+![Copy of Cloud Honeynet 2](https://github.com/Sirr-G/Cloud-SOC/assets/146764724/60e1040b-4b37-4577-a4b4-c10d81d50b33)
+
 
 ## Architecture After Hardening / Security Controls
-![Architecture Diagram](https://i.imgur.com/YQNa9Pp.jpg)
+![Copy of Cloud Honeynet 3](https://github.com/Sirr-G/Cloud-SOC/assets/146764724/a7fc0162-451a-4062-b64b-45023cb2468c)
+
 
 The architecture of the mini honeynet in Azure consists of the following components:
 
@@ -32,9 +35,10 @@ For the "BEFORE" metrics, all resources were originally deployed, exposed to the
 For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL traffic with the exception of my admin workstation, and all other resources were protected by their built-in firewalls as well as Private Endpoint
 
 ## Attack Maps Before Hardening / Security Controls
-![NSG Allowed Inbound Malicious Flows](https://i.imgur.com/1qvswSX.png)<br>
-![Linux Syslog Auth Failures](https://i.imgur.com/G1YgZt6.png)<br>
-![Windows RDP/SMB Auth Failures](https://i.imgur.com/ESr9Dlv.png)<br>
+<img width="1123" alt="nsg-malicious-allowed-in " src="https://github.com/Sirr-G/Cloud-SOC/assets/146764724/a47e90d4-bdab-409b-8901-53a3c4001587">
+
+<img width="1132" alt="windows-rdp-auth-fail" src="https://github.com/Sirr-G/Cloud-SOC/assets/146764724/da740bb9-dcea-43f9-a316-6e83ddff3c7f">
+
 
 ## Metrics Before Hardening / Security Controls
 
